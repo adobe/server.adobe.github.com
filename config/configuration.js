@@ -51,6 +51,7 @@ module.exports = {
   port: process.env.PORT || default_port,
   user: process.env.GHUSER,
   pass: process.env.GHPASS,
+  token: process.env.GHTOKEN,
   crossOrigin: crossOrigin,
   dir: dir,
   errorLog: errorLog,

@@ -5,7 +5,7 @@ console.log('action, details, time');
 var config = require('./config/configuration.js');
 if (config.env == 'production') {
 	console.log('started_nr, NewRelic, ');
-	require('newrelic');
+	//require('newrelic');
 }
 
 var controllers = require('./lib/server-adobe-github/controllers.js');
@@ -27,7 +27,7 @@ var server = module.exports.server = restify.createServer(config.server);
 server.use(config.crossOrigin);
 
 server.get('/', controllers.rootController);
-server.opts('.*', function(req, res) { res.send(200); });
+server.opts('*', function(req, res) { res.send(200); });
 
 try {
   server.listen(config.port, function() {

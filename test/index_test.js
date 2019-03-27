@@ -2,7 +2,7 @@
  * Copyright (c) 2013 Timo Behrmann. All rights reserved.
  */
 
-var server = require('../lib/server');
+var server = require('../server');
 var should = require('should');
 
 describe('test', function () {

@@ -39,6 +39,12 @@ export GHUSER=[userName]
 export GHPASS=[userPassword]
 ```
 
+Alternatively, use a github [personal access token](https://github.com/settings/tokens)
+
+```
+export GHTOKEN=[userToken]
+```
+
 ## Production
 
 It is better to use PM2 to launch your instance in production. More info [here](https://www.digitalocean.com/community/articles/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps).

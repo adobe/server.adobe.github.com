@@ -1,6 +1,6 @@
 {
   "name": "server-adobe-github",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Kim Chouard <kim.chouard@gmail.com>",
   "scripts": {
     "start": "node server.js",
@@ -9,24 +9,20 @@
   "main": "./server",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimchouard/server.adobe.github.com.git"
+    "url": "https://github.com/adobe/server.adobe.github.com"
   },
   "dependencies": {
-    "async": "0.2.x",
-    "request": "2.26.x",
-    "restify": "2.6.x",
-    "newrelic": "1.x.x",
-    "pm2": "0.7.x"
+    "async": "^2.0.0",
+    "request": "^2.26.x",
+    "restify": "^8.x.x",
+    "pm2": "3.4.1"
   },
   "devDependencies": {
     "mocha": "1.11.x",
     "should": "1.2.x",
-    "supertest": "0.7.x",
-    "jshint": "2.1.x",
-    "grunt": "~0.4.2",
-    "async": "~0.2.9"
+    "supertest": "0.7.x"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=8.0"
   }
 }
